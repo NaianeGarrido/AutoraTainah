@@ -1,0 +1,142 @@
+@charset "UTF-8";
+* {
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+  margin: 0px;
+}
+
+body {
+  background-image: url("/file/httpsdrive.google.comfiled117Q9PLh3orYlALIyeZEbJ6Oe_Lephur0viewusp=drive_link.jpn.jpg");
+  opacity: inherit;
+  background-repeat: no-repeat;
+  /* Não repete a imagem */
+  background-size: cover;
+  /* Faz a imagem cobrir todo o fundo */
+  background-position: center;
+  /* Centraliza a imagem */
+  position: relative;
+  background-attachment: fixed;
+  /* Faz a imagem acompanhar a rotação */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  margin-top: 7%;
+  top: 0%;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+  background-color: rgba(255, 184, 240, 0.556);
+  /* Cor branca com 50% de opacidade */
+  z-index: -1;
+  /* Coloca a camada atrás do conteúdo */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 100%;
+  /* Altura da viewport */
+  margin: 0;
+}
+
+h1 {
+  text-decoration: underline;
+  margin-bottom: 1%;
+}
+
+a {
+  text-decoration: none;
+  /* Remove o sublinhado */
+  color: rgb(0, 0, 0);
+  /* Mantém a cor do texto */
+  font-size: 24px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0%;
+  margin-top: 2%;
+}
+
+.imgPerfil {
+  border-radius: 50%;
+  border: solid;
+  width: 16vw;
+  height: 16vw;
+  margin-bottom: 1%;
+}
+
+header {
+  margin-top: 4%;
+  margin-bottom: 30%;
+  text-align: center;
+  margin: 0;
+  padding-top: 32px;
+  font-size: 14px;
+}
+
+.button-link {
+  background-color: rgba(244, 126, 7, 0.2549019608);
+  width: 45vw;
+  border: solid;
+  color: black;
+  padding: 30px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 9px;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.button-link:hover {
+  background-color: rgba(244, 126, 7, 0.5450980392);
+}
+
+.movie {
+  display: flex;
+  justify-content: center;
+  /* Centraliza os iframes horizontalmente */
+  gap: 50%;
+  /* Espaçamento entre os iframes */
+  margin-top: 2%;
+}
+.movie iframe {
+  width: 390px;
+  /* Largura do iframe */
+  height: 200px;
+  /* Altura do iframe */
+}
+@media (min-width: 300px), (max-width: 750px) {
+  .movie {
+    display: block;
+    text-align: center;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+  gap: 10%;
+  /* Espaçamento entre os ícones */
+  margin-top: 5%;
+  /* Espaçamento superior */
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
+footer {
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

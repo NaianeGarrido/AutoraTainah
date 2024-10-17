@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+  margin: 10px;
+  line-height: 25px;
+}
+
+body {
+  background-image: url("/file/httpsdrive.google.comfiled1MxfKDHoTLj27WeEi3kup6qtyJb7lcMeuviewusp=drive_link.jpn.jpg");
+  opacity: inherit;
+  background-repeat: no-repeat;
+  /* Não repete a imagem */
+  background-size: cover;
+  /* Faz a imagem cobrir todo o fundo */
+  background-position: center;
+  /* Centraliza a imagem */
+  position: relative;
+  background-attachment: fixed;
+  /* Faz a imagem acompanhar a rotação */
+}
+
+.ebook-container {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  text-align: center;
+}
+
+.ebook-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+
+.button-link {
+  background-color: #f47e0741; //cor da caixa
+  width: 45vw;
+  border: solid;
+  color: black; //cor da letra
+  padding: 30px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 9px;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.button-link:hover {
+  background-color: #f47e078b;
+}
+
+a {
+  text-decoration: none;
+  /* Remove o sublinhado */
+  color: rgb(0, 0, 0);
+  /* Mantém a cor do texto */
+
+}
+.introducao{
+  font-size: 24px;
+}
+
+footer {
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+  gap: 10%;
+  /* Espaçamento entre os ícones */
+  margin-top: 4%;
+  /* Espaçamento superior */
+  font-size: 20px;
+  margin-bottom: 2%;
+}
