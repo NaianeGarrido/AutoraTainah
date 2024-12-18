@@ -3,9 +3,9 @@
   font-family: "Comic Neue", cursive;
   font-weight: bold;
   margin: 0px;
-
 }
-.apresentacao{
+
+.apresentacao {
   font-size: 24px;
 }
 
@@ -13,14 +13,10 @@ body {
   background-image: url("file/perfilFundo.jpg");
   opacity: inherit;
   background-repeat: no-repeat;
-  /* Não repete a imagem */
   background-size: cover;
-  /* Faz a imagem cobrir todo o fundo */
   background-position: center;
-  /* Centraliza a imagem */
   position: relative;
   background-attachment: fixed;
-  /* Faz a imagem acompanhar a rotação */
 }
 
 body::before {
@@ -32,19 +28,14 @@ body::before {
   width: 90%;
   height: 100%;
   background-color: rgba(255, 184, 240, 0.556);
-  /* Cor branca com 50% de opacidade */
   z-index: -1;
-  /* Coloca a camada atrás do conteúdo */
 }
 
 .container {
   display: flex;
   justify-content: center;
-  /* Centraliza horizontalmente */
   align-items: center;
-  /* Centraliza verticalmente */
   height: 100%;
-  /* Altura da viewport */
   margin: 0;
 }
 
@@ -55,9 +46,7 @@ h1 {
 
 a {
   text-decoration: none;
-  /* Remove o sublinhado */
   color: rgb(0, 0, 0);
-  /* Mantém a cor do texto */
   font-size: 24px;
 }
 
@@ -70,8 +59,8 @@ a {
 .imgPerfil {
   border-radius: 50%;
   border: solid;
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
   margin-bottom: 1%;
 }
 
@@ -91,13 +80,11 @@ header {
   color: black;
   padding: 20px 50px;
   text-align: center;
-  text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
   border-radius: 9px;
-  text-decoration: none;
   justify-content: center;
   font-size: 24px;
 }
@@ -108,39 +95,39 @@ header {
 
 .movie {
   display: flex;
-  justify-content: center;
-  /* Centraliza os iframes horizontalmente */
-  gap: 50%;
-  /* Espaçamento entre os iframes */
+  justify-content: center; /* Centraliza o iframe horizontalmente */
+  align-items: center; /* Centraliza o iframe verticalmente */
   margin-top: 2%;
 }
+
 .movie iframe {
-  width: 390px;
-  /* Largura do iframe */
-  height: 200px;
-  /* Altura do iframe */
-}
-@media (min-width: 300px), (max-width: 750px) {
-  .movie {
-    display: block;
-    text-align: center;
-  }
+  width: 30%;
+  max-width: 500px; /* Limita a largura máxima do iframe */
+  height: auto;
+  aspect-ratio: 16/9; /* Mantém a proporção do iframe */
 }
 
+@media (min-width: 390px) and (max-width: 850px) {
+  .movie iframe {
+    width: 40%;
+    height: auto;
+    aspect-ratio: 16/9; /* Mantém a proporção do iframe */
+  }
+}
 .social-icons {
   display: flex;
   justify-content: center;
-  /* Centraliza os ícones horizontalmente */
   gap: 10%;
-  /* Espaçamento entre os ícones */
   margin-top: 5%;
-  /* Espaçamento superior */
   font-size: 20px;
   margin-bottom: 2%;
 }
 
 footer {
   justify-content: center;
-  /* Centraliza os ícones horizontalmente */
   text-align: center;
+}
+
+footer a {
+  font-size: inherit; /* Garante que o link tenha o mesmo tamanho de fonte do texto ao redor */
 }/*# sourceMappingURL=style.css.map */
