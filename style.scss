@@ -1,133 +1,21 @@
-* {
-  font-family: "Comic Neue", cursive;
-  font-weight: bold;
-  margin: 0px;
-}
-
-.apresentacao {
-  font-size: 24px;
-}
-
-body {
-  background-image: url("file/perfilFundo.jpg");
-  opacity: inherit;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  background-attachment: fixed;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  margin-top: 7%;
-  top: 0%;
-  left: 5%;
-  width: 90%;
-  height: 100%;
-  background-color: rgba(255, 184, 240, 0.556);
-  z-index: -1;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin: 0;
-}
-
-h1 {
-  text-decoration: underline;
-  margin-bottom: 1%;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-}
-
-.navList {
-  list-style: none;
-  padding: 0%;
-  margin-top: 2%;
-}
-
-.imgPerfil {
-  border-radius: 50%;
-  border: solid;
-  width: 20vw;
-  height: 20vw;
-  margin-bottom: 1%;
-}
-
-header {
-  margin-top: 4%;
-  margin-bottom: 30%;
-  text-align: center;
-  margin: 0;
-  padding-top: 32px;
-  font-size: 14px;
-}
-
-.button-link {
-  background-color: #f47e0741;
-  width: 45vw;
-  border: solid;
-  color: black;
-  padding: 20px 50px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  cursor: pointer;
-  border-radius: 9px;
-  justify-content: center;
-  font-size: 24px;
-}
-
-.button-link:hover {
-  background-color: #f47e078b;
-}
-
-.movie {
-  display: flex;
-  justify-content: center; /* Centraliza o iframe horizontalmente */
-  align-items: center; /* Centraliza o iframe verticalmente */
-  margin-top: 2%;
-}
-
-.movie iframe {
-  width: 30%;
-  max-width: 500px; /* Limita a largura máxima do iframe */
-  height: auto;
-  aspect-ratio: 16/9; /* Mantém a proporção do iframe */
-}
-
-@media (min-width: 390px) and (max-width: 850px) {
-  .movie iframe {
-    width: 40%;
-    height: auto;
-    aspect-ratio: 16/9; /* Mantém a proporção do iframe */
-  }
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  margin-top: 5%;
-  font-size: 20px;
-  margin-bottom: 2%;
-}
-
 footer {
   justify-content: center;
+  /* Centraliza os ícones horizontalmente */
   text-align: center;
 }
 
 footer a {
   font-size: inherit; /* Garante que o link tenha o mesmo tamanho de fonte do texto ao redor */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+  gap: 10%;
+  /* Espaçamento entre os ícones */
+  margin-top: 5%;
+  /* Espaçamento superior */
+  font-size: 20px;
+  margin-bottom: 2%;
 }
