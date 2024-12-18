@@ -76,14 +76,19 @@ footer {
   text-align: center;
 }
 
+footer a {
+  font-size: inherit; /* Garante que o link tenha o mesmo tamanho de fonte do texto ao redor */
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
   /* Centraliza os ícones horizontalmente */
   gap: 10%;
   /* Espaçamento entre os ícones */
-  margin-top: 4%;
+  margin-top: 5%;
   /* Espaçamento superior */
   font-size: 20px;
   margin-bottom: 2%;
 }
+
