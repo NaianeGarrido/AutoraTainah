@@ -35,25 +35,23 @@ body {
 }
 
 .button-link {
-  background-color: rgba(244, 126, 7, 0.2549019608);
+  background-color: rgba(244, 209, 173, 0.2549019608);
   width: 45vw;
   border: solid;
   color: black;
   padding: 20px 50px;
   text-align: center;
-  text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
   border-radius: 9px;
-  text-decoration: none;
   justify-content: center;
   font-size: 24px;
 }
 
 .button-link:hover {
-  background-color: rgba(244, 126, 7, 0.5450980392);
+  background-color: rgba(224, 170, 134, 0.6);
 }
 
 a {
@@ -73,13 +71,17 @@ footer {
   text-align: center;
 }
 
+footer a {
+  font-size: inherit; /* Garante que o link tenha o mesmo tamanho de fonte do texto ao redor */
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
   /* Centraliza os ícones horizontalmente */
   gap: 10%;
   /* Espaçamento entre os ícones */
-  margin-top: 4%;
+  margin-top: 5%;
   /* Espaçamento superior */
   font-size: 20px;
   margin-bottom: 2%;
