@@ -26,9 +26,9 @@ body::before {
   top: 0%;
   left: 5%;
   width: 90%;
-  height: 100%;
-  background-color: rgba(255, 184, 240, 0.556);
+  background-color: rgba(250, 245, 245, 0.508);
   z-index: -1;
+  height: 100%;
 }
 
 .container {
@@ -74,7 +74,7 @@ header {
 }
 
 .button-link {
-  background-color: rgba(244, 126, 7, 0.2549019608);
+  background-color: rgba(245, 193, 141, 0.2549019608);
   width: 45vw;
   border: solid;
   color: black;
@@ -90,7 +90,7 @@ header {
 }
 
 .button-link:hover {
-  background-color: rgba(244, 126, 7, 0.5450980392);
+  background-color: rgba(224, 170, 134, 0.6);
 }
 
 .movie {
@@ -114,20 +114,24 @@ header {
     aspect-ratio: 16/9; /* Mantém a proporção do iframe */
   }
 }
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  margin-top: 5%;
-  font-size: 20px;
-  margin-bottom: 2%;
-}
-
 footer {
   justify-content: center;
+  /* Centraliza os ícones horizontalmente */
   text-align: center;
 }
 
 footer a {
   font-size: inherit; /* Garante que o link tenha o mesmo tamanho de fonte do texto ao redor */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+  gap: 10%;
+  /* Espaçamento entre os ícones */
+  margin-top: 5%;
+  /* Espaçamento superior */
+  font-size: 20px;
+  margin-bottom: 2%;
 }/*# sourceMappingURL=style.css.map */
